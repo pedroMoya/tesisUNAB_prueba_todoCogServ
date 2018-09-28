@@ -9,3 +9,5 @@ Author
 ------
 
 David Britch
+
+ediciones: Patricio Vera y Pedro Moya
