@@ -21,6 +21,7 @@
     <AndroidSigningKeyAlias>sinalias</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>sinalias</AndroidSigningKeyPass>
     <AndroidSigningStorePass>sinclave</AndroidSigningStorePass>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,7 +39,7 @@
     <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <BundleAssemblies>false</BundleAssemblies>
-    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
     <AndroidHttpClientHandlerType>
     </AndroidHttpClientHandlerType>
   </PropertyGroup>
@@ -60,7 +61,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AotAssemblies>false</AotAssemblies>
     <EnableLLVM>false</EnableLLVM>
-    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
   </PropertyGroup>
   <ItemGroup>
@@ -90,9 +91,9 @@
   <ItemGroup>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FileHelper.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Services\AudioRecorderService.cs" />
     <Compile Include="MainApplication.cs" />
   </ItemGroup>
